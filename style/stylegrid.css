@@ -20,7 +20,11 @@ nav {
 }
 
 .grid-wrapper > main {
-    grid-auto-rows: repeat(3, 1fr);
+    background-color: blue;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 
 section {
@@ -29,12 +33,14 @@ section {
 }
 
 article {
-    background-color: blue;
+    /* min-height: 100px;
+    border-radius: 10px; */
 }
 
 footer {
     background-color: tomato;
     grid-column: 2 / -1;
+    grid-row: -2 / -1;
 }
 
 .grid-wrapper > * {
