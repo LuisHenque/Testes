@@ -11,14 +11,21 @@ body {
 
 header {
     background-color: violet;
+    grid-column: 2 / -1;
 }
 
 nav {
     background-color: aquamarine;
+    grid-row: 1 / -1;
+}
+
+.grid-wrapper > main {
+    grid-auto-rows: repeat(3, 1fr);
 }
 
 section {
     background-color: yellow;
+    grid-row: 2 / 4;
 }
 
 article {
@@ -27,6 +34,7 @@ article {
 
 footer {
     background-color: tomato;
+    grid-column: 2 / -1;
 }
 
 .grid-wrapper > * {
@@ -39,4 +47,6 @@ footer {
 
 .grid-wrapper {
     display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 240px repeat(3, 1fr);
 }
