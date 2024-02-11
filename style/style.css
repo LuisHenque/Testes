@@ -76,4 +76,5 @@ footer > p > a {
 footer> p > a:hover {
     color: rgba(13, 160, 179, 0.863);
     text-decoration: underline;
+    transition: .5s;
 }
