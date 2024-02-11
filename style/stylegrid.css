@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: violet;
+    background-color: rgb(133, 34, 133);
     grid-column: 1 / -1;
     grid-row: 1 / 2;
 }
@@ -31,18 +31,36 @@ article {
 }
 
 article > a {
+    color: #0b0bcf;
     text-decoration: none;
-    color: black;
 }
 
 article > a:hover {
     color: tomato;
 }
 
+article > p.card {
+    text-align: justify;
+}
+
 footer {
     background-color: tomato;
     grid-column: 1 / -1;
     grid-row: -2 / -1;
+}
+
+footer > .footer-des {
+    text-align: center;
+}
+
+footer > .footer-des > p > a {
+    color: #000;
+    font-size: bolder;
+    text-decoration: none;
+}
+
+footer > .footer-des > p > a:hover {
+    color: #0b0bcf;
 }
 
 .grid-wrapper > * {
