@@ -1,40 +1,33 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Sora', Helvetica, sans-serif ;
     margin: 0;
     padding: 0;
 }
 
-html, body {
+body, html {
     background-color: lightgray;
+    height: 100vw;
+    width: 100vw;
 }
 
 header {
     background-color: #000;
-    color: #fff;
 }
 
-header > img {
+header > img#logo {
     margin: 20px;
-    padding: 10px;
-    width: 150px;
+    width: 100px;
 }
-
-/* header > input {
-    height: 25px;
-    position: absolute;
-    left: 390px;
-    top: 80px;
-    width: 500px;
-} */
 
 header > span {
     color: #fff;
     font-size: bolder;
     position: absolute;
-    top: 80px;
-    z-index: 1;
+    top: 30px;
 }
 
 header > nav {
