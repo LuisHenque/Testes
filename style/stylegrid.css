@@ -12,14 +12,34 @@ body {
 }
 
 header {
-    background-color: rgb(133, 34, 133);
+    background-color: rgba(0, 0, 0, 0.849);
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     position: sticky;
     top: 0;
 }
 
-nav {
+header > img#logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 100px;
+}
+
+header > nav {
+    display: inline-block;
+}
+
+header > nav > a {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    align-items: left;
+    top: -10px;
+    text-decoration: none;
+}
+
+aside {
     background-color: aquamarine;
     grid-row: 2 / -2;
 }
@@ -73,7 +93,7 @@ footer > .footer-des > p > a:hover {
 
 .grid-wrapper > * {
     min-height: 100px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
