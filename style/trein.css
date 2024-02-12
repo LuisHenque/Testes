@@ -70,7 +70,7 @@ header {
 }
 
 .drop-hover .drop {
-    background-color: #e7c819da;
+    background-color: #f2f2f2;
     height: 0;
     position: absolute;
     overflow: hidden;
