@@ -15,7 +15,7 @@
 }
 
 header {
-    background-color: #000;
+    background-color: #f2f2f2;
     width: 100%;
 }
 
@@ -30,11 +30,11 @@ header {
     justify-content: space-between;
 }
 
-.top-header .logotipo img {
+.interface .logotipo img {
     max-width: 150px;
 }
 
-.top-header .interface .btn-header button {
+.interface .btn-header button {
     background-color: transparent;
     border: 1px solid #000;
     border-radius: 50%;
@@ -43,15 +43,40 @@ header {
     width: 50px;
 }
 
-.top-header .btn-header button a {
+.interface .btn-header button a {
     color: #000;
 }
 
-.interface .btn-header button:hover {
-    background-color: slateblue;
+.bottom-header nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a {
+    color: #0B3954;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.bottom-header nav ul li a:hover {
+    color: #5071d5;
+}
+
+.drop-hover {
+    position: relative;;
+}
+
+.drop-hover .drop {
+    background-color: #e7c819da;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
     transition: .5s;
 }
 
-.interface .btn-header button a:hover {
-    color: springgreen;
+.drop-hover:hover .drop {
+    height: 230px;
 }
