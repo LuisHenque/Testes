@@ -46,11 +46,11 @@ header > nav a:hover {
     color: #00ff7f;
 }
 
-header > div > span {
+header > div > i {
     color: #00ff7f;
     position: absolute;
     right: 200px;
-    top: 80px;
+    top: 30px;
 }
 
 header > div > p > a {
@@ -59,4 +59,9 @@ header > div > p > a {
     right: 70px;
     top: 80px;
     text-decoration: none;
+}
+
+
+i#whats {
+    color: #00ff7f;
 }
