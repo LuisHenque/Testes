@@ -86,6 +86,7 @@ header {
     justify-content: center;
     list-style-type: none;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 .bottom-header .interface {
@@ -135,3 +136,31 @@ header {
     box-shadow: 2px 2px 2px #00000098;
     height: 250px;
 }
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    background-color: var(--cor2);
+    height: 360px;
+    width: 360px;
+    margin-bottom: 30px;
+}
+
+.product img {
+    max-width: 300px;
+}
+
+.produtos .flex {
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.product img:hover {
+    transform: 1.05;
+}
+
