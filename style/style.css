@@ -71,6 +71,7 @@ header {
     color: var(--cor2);
 }
 
+/* INICIO BOTTOM HEADER */
 .bottom-header nav ul {
     align-items: center;
     display: flex;
@@ -87,6 +88,8 @@ header {
 
 .bottom-header nav ul li a:hover {
     color: var(--cor2);
+    text-decoration: underline;
+    transition: .3s;
 }
 
 .drop-hover {
@@ -104,5 +107,68 @@ header {
 
 .drop-hover:hover .drop {
     height: 260px;
+    border-radius: 0px 0px 20px;
+    /* border: 2px solid var(--cor1); */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.46);
 }
+
+.top-header .btn-header .btn-zap {
+    color: springgreen;
+}
+
+.top-header .btn-header .btn-zap:hover {
+    color: var(--cor1);
+}
+
+.top-header .btn-header button:hover {
+    background-color: springgreen;
+}
+
+
+article {
+    /* background-color: #0B3954; */
+    border: 1px solid #000;
+}
+
+p {
+    /* padding: 10px; */
+    margin: 10px;
+    color: #5C676D;
+}
+
+h3 {
+    color: var(--cor4);
+}
+
+.img-grid {
+    max-width: 200px;
+}
+
+
+.grid-wrapper > * {
+    align-items: center;
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.grid-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 600px 1fr;
+    padding: 30px;
+}
+
+
+/* .grid-wrapper > main {
+    background-color: #ccc;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    text-align: center;
+} */
 
