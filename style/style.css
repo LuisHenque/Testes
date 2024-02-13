@@ -1,11 +1,31 @@
 @charset "UTF-8";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../fonts/bubblegum-sans-regular.otf) format('opentype');
+}
+
+:root {
+    --cor0: #f2f2f2;
+    --cor1: #0B3954;
+    --cor2: #5071D5;
+    --cor3: #5C676D;
+    --cor4: #FFB128;
+    --cor5: #3b280d;
+    --fonte-padrao: Arial, Verdana, Helveticam sans-serif;
+    --fonte-poppins: 'Poppins', cursive;
+    --fonte-sora: 'Sora', cursive;
+    --fonte-destaque: 'FonteLogo', cursive;   
+}
 
 * {
     box-sizing: border-box;
-    font-family: 'Sora', Helvetica, sans-serif;
+    font-family: var(--fonte-sora);
     margin: 0;
     padding: 0;
 }
@@ -16,13 +36,16 @@
 }
 
 header {
-    background-color: #f2f2f2;
-    width: 100%;
+    background-color: var(--cor0);
+}
+
+.top-header .logotipo img {
+    max-width: 150px;
 }
 
 .top-header {
     background-color: #fff;
-    padding: 20px 4%;
+    padding: 20px;
 }
 
 .top-header > .interface {
@@ -31,21 +54,21 @@ header {
     justify-content: space-between;
 }
 
-.interface .logotipo img {
-    max-width: 150px;
-}
-
-.interface .btn-header button {
+.top-header .btn-header button {
     background-color: transparent;
     border: 1px solid #000;
     border-radius: 50%;
-    font-size: 20px;
     height: 50px;
     width: 50px;
 }
 
-.interface .btn-header button a{
-    color: #000;
+.top-header .btn-header button a {
+    color: var(--cor1);
+    font-size: 20px;
+}
+
+.top-header .btn-header button a:hover {
+    color: var(--cor2);
 }
 
 .bottom-header nav ul {
@@ -56,14 +79,14 @@ header {
 }
 
 .bottom-header nav ul li a {
-    color: #0B3954;
+    color: var(--cor1);
+    display: block;
     padding: 20px;
     text-decoration: none;
-    display: block;
 }
 
 .bottom-header nav ul li a:hover {
-    color: #5071D5;
+    color: var(--cor2);
 }
 
 .drop-hover {
@@ -71,15 +94,15 @@ header {
 }
 
 .drop-hover .drop {
-    background-color: #f2f2f2;
+    background-color: var(--cor0);
     height: 0;
     position: absolute;
     overflow: hidden;
     width: 100%;
     transition: .5s;
-} 
+}
 
 .drop-hover:hover .drop {
-    height: 230px;
+    height: 260px;
 }
 
