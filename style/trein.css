@@ -36,6 +36,11 @@
     margin: 0 auto;
 }
 
+.logo-Lw img {
+    margin: auto;
+    padding: 40px 4%;
+}
+
 .menu-desk {display: none;}
 .btn-social {display: none;}
 #logoS {display: block;}
@@ -72,8 +77,9 @@ header {
 }
 
 .top-header .btn-social button:hover {
-    background-color: var(--cor4);
-    box-shadow: 1px 1px 4px #00000094;
+    background-color: var(--cor1);
+    box-shadow: 2px 2px 4px #00000094;
+    color: var(--cor4);
 }
 
 /* Estilo Bottom-Header */
@@ -108,6 +114,7 @@ header {
     position: absolute;
     height: 0;
     overflow: hidden;
+    transition: .5s;
 }
 
 .drop-hover:hover .drop {
@@ -126,6 +133,10 @@ header {
     font-size: 35px;
     height: 40px;
     width: 40px;
+}
+
+.top-header .btn-menu-mobile button:hover{
+    color: var(--cor4);
 }
 
 .menu-mobile {
@@ -189,4 +200,3 @@ header {
 .product img:hover {
     transform: 1.05;
 }
- */
