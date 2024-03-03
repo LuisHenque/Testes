@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media print {
+    /* PARA IMPRESSÃO */
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .menu-desk {display: block;}
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    #logoS {display: none;}
+    #logoM {display: block;}
+    #logoG {display: none;}
+
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .menu-desk {display: block;}
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    #logoS {display: none;}
+    #logoM {display: none;}
+    #logoG {display: block;}
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-desk {display: block;}
+    .btn-social {display: block;}
+    .btn-menu-mobile {display: none;}
+    .menu-mobile {display: none;}
+    #logoS {display: none;}
+    #logoM {display: none;}
+    #logoG {display: block;}
+}

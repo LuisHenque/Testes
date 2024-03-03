@@ -44,10 +44,6 @@ header {
     margin: 0 auto;
 }
 
-.top-header .logotipo img {
-    max-width: 150px;
-}
-
 .top-header > .interface {
     display: flex;
     align-items: center;
@@ -58,8 +54,8 @@ header {
     background-color: transparent;
     border: 1px solid #000;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .top-header .btn-header button a {

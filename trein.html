@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/trein.css">
+    <link rel="stylesheet" href="style/treinmq.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Treino</title>
 </head>
@@ -15,36 +16,57 @@
                     <img src="imagens/logo_s.png" alt="Logotipo Lone Wolf">
                 </div>
                 <div class="btn-social">
-                    <a href="index.html"><button><i class="bi bi-house-fill"></i></button></a>
+                    <a href="index.html" accesskey="a"><button><i class="bi bi-house-fill"></i></button></a>
                     <a href="#"><button><i class="bi bi-instagram"></i></button></a>
                     <a class="test" href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                </div>
+                <div class="btn-menu-mobile">
+                    <button onclick="animarMenu()" id="btn-menu"><i class="bi bi-list"></i></button>
                 </div>
             </div>
         </section>
         <section class="bottom-header">
             <div class="interface">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="grid.html">GRID</a></li>
-                        <li class="drop-hover"><a href="">SERVIÇOS <i class="bi bi-caret-down-fill"></i></a>
-                            <div class="drop">
-                                <a href="#">SITE</a>
-                                <a href="#">ANÚNCIOS</a>
-                                <a href="#">BLOG</a>
-                                <a href="#">PRODUTOS</a>
-                            </div>
-                        </li>
-                        <li><a href="#">PROJETOS</a></li>
-                        <li><a href="#">CONTATO</a></li>
-                    </ul>
-                </nav>
+                <div class="menu-desk">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="grid.html">GRID</a></li>
+                            <li class="drop-hover"><a href="">PRODUTOS <i class="bi bi-caret-down-fill"></i></a>
+                                <div class="drop">
+                                    <a href="#">Lançamentos</a>
+                                    <a href="#">Uso Interno</a>
+                                    <a href="#">Uso Externo</a>
+                                    <a href="#">Todos</a>
+                                </div>
+                            </li>
+                            <li><a href="#">PROJETOS</a></li>
+                            <li><a href="#">CONTATO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- <button><i class="bi bi-list"></i></button> -->
+
+                <div class="menu-mobile" id="menu-mobile">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="grid.html">GRID</a></li>
+                            <li class="drop-hover"><a href="">SERVIÇOS</a></li>
+                            <li><a href="#">PROJETOS</a></li>
+                            <li><a href="#">CONTATO</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </section>
     </header>
 
     <main>
-        <img src="imagens/logo_engine_m2.png" alt="">
+        <img id="logoS" src="imagens/logo_engine_s2.png" alt="Logotipo_Engrenagem Lone Wolf">
+        <img id="logoM" src="imagens/logo_engine_m2.png" alt="Logotipo_Engrenagem Lone Wolf">
+        <img id="logoG" src="imagens/logo_engine_g2.png" alt="Logotipo_Engrenagem Lone Wolf">
         
 
         <section class="produtos">
@@ -93,6 +115,6 @@
             </div>
         </section>
     </main>
-   
+    <script src="menu-animar.js"></script>
 </body>
 </html>

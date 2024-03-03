@@ -23,6 +23,7 @@
     --fonte-destaque: 'FonteLogo', cursive;   
 }
 
+/* Estilos Geral */
 * {
     box-sizing: border-box;
     font-family: var(--fonte-sora);
@@ -30,24 +31,33 @@
     padding: 0;
 }
 
-header {
-    background-color: var(--cor0);
-}
-
-.top-header {
-    background-color: #fff;
-    padding: 20px 4%;
-}
-
 .interface {
     max-width: 80vw;
     margin: 0 auto;
 }
 
-header .interface {
+.menu-desk {display: none;}
+.btn-social {display: none;}
+#logoS {display: block;}
+#logoM {display: none;}
+#logoG {display: none;}
+
+/* Estilo Top-Header */
+
+header {
+    background-color: var(--cor0);
+}
+
+.top-header .interface {
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+.top-header {
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #000000ab;
+    padding: 20px 4%;
 }
 
 .top-header .btn-social button {
@@ -63,28 +73,30 @@ header .interface {
 
 .top-header .btn-social button:hover {
     background-color: var(--cor4);
+    box-shadow: 1px 1px 4px #00000094;
 }
 
-/* Estilo Bottom Header */
+/* Estilo Bottom-Header */
 
-.bottom-header nav ul {
+.bottom-header .menu-desk nav ul {
     align-items: center;
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
 
-.bottom-header nav ul li a {
+.bottom-header .menu-desk nav ul li a {
     color: var(--cor1);
     display: block;
-    /* font-weight: 700; */
-    padding: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
     text-decoration: none;
-    transition: .5s;
+    transition: .4s;
 }
 
-.bottom-header nav ul li a:hover {
-    color: var(--cor2);
+.bottom-header .menu-desk nav ul li a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
 }
 
 .drop-hover {
@@ -96,145 +108,63 @@ header .interface {
     position: absolute;
     height: 0;
     overflow: hidden;
-    transition: .5s;
 }
 
 .drop-hover:hover .drop {
-    height: 250px;
+    box-shadow: 2px 2px 2px #0000009d;
+    border-radius: 0 0 15px;
+    height: 170px;
 }
 
 
+/* Estilo Menu Mobile */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-* {
-    box-sizing: border-box;
-    font-family: var(--fonte-sora);
-    margin: 0;
-    padding: 0;
-}
-
-.interface {
-    max-width: 80vw;
-    margin: 0 auto;
-}
-
-header {
-    background-color: var(--cor0);
-}
-
-.top-header .interface {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-header .logotipo img {
-    max-width: 150px;
-}
-
-.top-header {
-    background-color: #fff;
-    padding: 20px;
-}
-
-.top-header .btn-header button {
+.top-header .btn-menu-mobile button {
     background-color: transparent;
-    border: 1px solid var(--cor1);
-    border-radius: 50%;
-    height: 50px;
-    transition: .5s;
-    width: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
 }
 
-.top-header .btn-header button:hover {
-    background-color: var(--cor2);
-}
-
-.top-header .btn-header button a {
-    color: var(--cor1);
-    font-size: 20px;
-    padding: 13px;
-}
-
-.top-header .btn-header button a:hover {
-    color: var(--cor4);
-}
-
-.bottom-header nav ul {
-    align-items: center;
-    border-top: 1px solid #3b280d;
-    border-bottom: 1px solid #3b280d;
-    box-shadow: 1px 1px 1px #00000098;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 20px;
-    margin-bottom: 50px;
-}
-
-.bottom-header .interface {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.bottom-header .a-drop {
-    padding: 20px;
-}
-
-.bottom-header nav ul li a {
-    border-right: 0.5px solid #cfcfcfc9;
-    color: var(--cor1);
-    font-weight: 600;
-    display: block;
-    padding: 0px 20px;
-    text-decoration: none;
-}
-
-.bottom-header nav ul li a:hover {
-    color: var(--cor4);
-    text-decoration: underline;
-}
-
-.drop-hover {
-    position: relative;
-}
-
-.drop {
-    background-color: var(--cor0);
+.menu-mobile {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
     height: 0;
     position: absolute;
     overflow: hidden;
-    transition: .5s;
+    right: 0;
+    transition: .6s;
+    top: 50;
+    visibility: hidden;
+    width: 50%;
 }
 
-.drop-hover:hover .drop {
-    border-radius: 0px 0px 20px;
-    box-shadow: 2px 2px 2px #00000098;
-    height: 250px;
+.menu-mobile.abrir{
+    visibility: visible;
+    height: calc(100vh - 83px);
+}
+
+.menu-mobile nav ul {
+    list-style-type: none;
+}
+
+.menu-mobile nav ul li a {
+    color: var(--cor0);
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #0000008a;
+    color: var(--cor4);
 }
 
 
-
+/* GRIDS */
 .flex {
     display: flex;
     align-items: center;
