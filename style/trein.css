@@ -30,6 +30,108 @@
     padding: 0;
 }
 
+header {
+    background-color: var(--cor0);
+}
+
+.top-header {
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+.interface {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+header .interface {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header .btn-social button {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    transition: .5s;
+    width: 40px;
+}
+
+.top-header .btn-social button:hover {
+    background-color: var(--cor4);
+}
+
+/* Estilo Bottom Header */
+
+.bottom-header nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a {
+    color: var(--cor1);
+    display: block;
+    /* font-weight: 700; */
+    padding: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.bottom-header nav ul li a:hover {
+    color: var(--cor2);
+}
+
+.drop-hover {
+    position: relative;
+}
+
+.drop-hover .drop {
+    background-color: var(--cor0);
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.drop-hover:hover .drop {
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fonte-sora);
+    margin: 0;
+    padding: 0;
+}
+
 .interface {
     max-width: 80vw;
     margin: 0 auto;
@@ -99,12 +201,6 @@ header {
     padding: 20px;
 }
 
-/* .bottom-header .ul-widht {
-    border-top: 1px solid #3b280d;
-    border-bottom: 1px solid #3b280d;
-    width: 100vw;
-} */
-
 .bottom-header nav ul li a {
     border-right: 0.5px solid #cfcfcfc9;
     color: var(--cor1);
@@ -163,4 +259,4 @@ header {
 .product img:hover {
     transform: 1.05;
 }
-
+ */

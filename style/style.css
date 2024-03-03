@@ -30,22 +30,22 @@
     padding: 0;
 }
 
+header {
+    background-color: var(--cor0);
+}
+
+.top-header {
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
 .interface {
     max-width: 80vw;
     margin: 0 auto;
 }
 
-header {
-    background-color: var(--cor0);
-}
-
 .top-header .logotipo img {
     max-width: 150px;
-}
-
-.top-header {
-    background-color: #fff;
-    padding: 20px;
 }
 
 .top-header > .interface {
