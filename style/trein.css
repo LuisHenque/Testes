@@ -111,8 +111,8 @@ header {
 
 .drop-hover .drop {
     background-color: var(--cor0);
-    position: absolute;
     height: 0;
+    position: absolute;
     overflow: hidden;
     transition: .5s;
 }
